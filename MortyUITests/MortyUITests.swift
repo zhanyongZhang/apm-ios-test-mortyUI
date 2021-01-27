@@ -29,6 +29,35 @@ final class MortyUITests: XCTestCase {
         
         sleep(10)
     }
+    
+    func testLaunch_foregoundToBackground() throws {
+        let app = XCUIApplication()
+        app.launch()
+        
+        sleep(10)
+        
+        if app.wait(for: .runningForeground, timeout: 2) {
+            sleep(2)
+            
+            let device = XCUIDevice.shared
+            device.press(.home)
+
+            app.activate()
+            
+            sleep(10)
+        }
+        
+        if app.wait(for: .runningForeground, timeout: 2) {
+            sleep(2)
+            
+            let device = XCUIDevice.shared
+            device.press(.home)
+
+            app.activate()
+            
+            sleep(10)
+        }
+    }
 
     func testLaunch_performance() throws {
         measure(metrics: [XCTApplicationLaunchMetric()]) {
