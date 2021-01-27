@@ -59,6 +59,10 @@ class SearchViewModel: ObservableObject {
                                        count: 3)
                 
                 self?.fetchSearch(search: searchText)
+                
+                if searchText == "Crash" {
+                    Crash.forceUnwrapCrash()
+                }
             })
     }
     

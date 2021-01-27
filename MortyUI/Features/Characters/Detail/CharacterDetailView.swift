@@ -58,6 +58,9 @@ struct CharacterDetailView: View {
                                         .font(.footnote)
                                 }
                             })
+                            .navigationBarItems(trailing: Button("💥", action: {
+                                Crash.mainThreadCrash()
+                            }))
                     }
                 }
             }

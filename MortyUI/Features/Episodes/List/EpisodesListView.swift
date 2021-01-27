@@ -25,6 +25,11 @@ struct EpisodesListView: View {
                 }
             }
             .navigationTitle("Episodes")
+            .navigationBarItems(leading: Button("💥", action: {
+                Crash.objcOutOfBoundCrash()
+            }), trailing: Button("💥", action: {
+                Crash.outOfBoundCrash()
+            }))
             .onAppear {
                 data.fetchEpisodes()
             }

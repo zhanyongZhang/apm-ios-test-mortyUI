@@ -2,12 +2,48 @@
   "object": {
     "pins": [
       {
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
+        "state": {
+          "branch": null,
+          "revision": "eaf6e622dd41b07b251d8f01752eab31bc811493",
+          "version": "5.4.1"
+        }
+      },
+      {
         "package": "Apollo",
         "repositoryURL": "https://github.com/apollographql/apollo-ios.git",
         "state": {
           "branch": null,
           "revision": "ac158ccaad973ff44f8c2a78a50933c29f34bdd9",
           "version": "0.39.0"
+        }
+      },
+      {
+        "package": "CombineCocoa",
+        "repositoryURL": "https://github.com/CombineCommunity/CombineCocoa.git",
+        "state": {
+          "branch": null,
+          "revision": "749c16693b3a6fa1af2b95256fda734e7ec2258b",
+          "version": "0.2.2"
+        }
+      },
+      {
+        "package": "Facebook",
+        "repositoryURL": "https://github.com/facebook/facebook-ios-sdk.git",
+        "state": {
+          "branch": null,
+          "revision": "efb1705a421c85c022d45b8205e1a1f431f8ade8",
+          "version": "9.0.0"
+        }
+      },
+      {
+        "package": "Hero",
+        "repositoryURL": "https://github.com/HeroTransitions/Hero.git",
+        "state": {
+          "branch": null,
+          "revision": "ae951b89f23485de8a7b95aaa5cead7f78ab1df0",
+          "version": "1.5.0"
         }
       },
       {
@@ -89,6 +125,15 @@
           "branch": null,
           "revision": "37760e9a52030bb9011972c5213c3350fa9d41fd",
           "version": "1.0.0"
+        }
+      },
+      {
+        "package": "BitriseTrace",
+        "repositoryURL": "https://github.com/bitrise-io/trace-cocoa-sdk.git",
+        "state": {
+          "branch": null,
+          "revision": "29395ed498b8a69360805b31ed627e1779b1c668",
+          "version": "1.7.11"
         }
       }
     ]

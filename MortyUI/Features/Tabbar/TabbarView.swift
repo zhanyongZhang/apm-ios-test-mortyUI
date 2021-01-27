@@ -24,7 +24,7 @@ struct TabbarView: View {
                 }
             SearchView()
                 .tabItem {
-                    Label("Seach", systemImage: "magnifyingglass")
+                    Label("Search", systemImage: "magnifyingglass")
                 }
         }
     }

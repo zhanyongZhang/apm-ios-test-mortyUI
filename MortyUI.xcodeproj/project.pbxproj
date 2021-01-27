@@ -3,10 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1099E3FB25BB333800A3EB7D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 1099E3FA25BB333800A3EB7D /* Alamofire */; };
+		1099E3FF25BB335900A3EB7D /* CombineCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 1099E3FE25BB335900A3EB7D /* CombineCocoa */; };
+		1099E40325BB33B100A3EB7D /* Hero in Frameworks */ = {isa = PBXBuildFile; productRef = 1099E40225BB33B100A3EB7D /* Hero */; };
+		1099E40725BB34E300A3EB7D /* Trace in Frameworks */ = {isa = PBXBuildFile; productRef = 1099E40625BB34E300A3EB7D /* Trace */; };
+		1099E40B25BB375B00A3EB7D /* FacebookShare in Frameworks */ = {isa = PBXBuildFile; productRef = 1099E40A25BB375B00A3EB7D /* FacebookShare */; };
+		1099E40D25BB375B00A3EB7D /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = 1099E40C25BB375B00A3EB7D /* FacebookCore */; };
+		1099E40F25BB375B00A3EB7D /* FacebookGamingServices in Frameworks */ = {isa = PBXBuildFile; productRef = 1099E40E25BB375B00A3EB7D /* FacebookGamingServices */; };
+		1099E41125BB375B00A3EB7D /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 1099E41025BB375B00A3EB7D /* FacebookLogin */; };
+		1099E41A25BB386F00A3EB7D /* MortyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1099E41925BB386F00A3EB7D /* MortyUITests.swift */; };
+		1099E42625BB3C9A00A3EB7D /* Crash1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1099E42525BB3C9A00A3EB7D /* Crash1Tests.swift */; };
+		1099E42A25BB3CA200A3EB7D /* Crash2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1099E42925BB3CA200A3EB7D /* Crash2Tests.swift */; };
+		1099E42E25BB3CA800A3EB7D /* Crash3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1099E42D25BB3CA800A3EB7D /* Crash3Tests.swift */; };
+		1099E43025BB3CAE00A3EB7D /* Crash4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1099E42F25BB3CAE00A3EB7D /* Crash4Tests.swift */; };
+		1099E43425BB3CB500A3EB7D /* Crash5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1099E43325BB3CB500A3EB7D /* Crash5Tests.swift */; };
+		1099E43825BB3CFB00A3EB7D /* Crash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1099E43725BB3CFB00A3EB7D /* Crash.swift */; };
 		6975BDF925A3256F00C72136 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6975BDF825A3256F00C72136 /* SearchView.swift */; };
 		6975BDFC25A325DD00C72136 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6975BDFB25A325DD00C72136 /* SearchViewModel.swift */; };
 		69A1201E2590EA920073E76F /* InfoRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A1201D2590EA920073E76F /* InfoRowView.swift */; };
@@ -37,7 +52,26 @@
 		69F9DD2A258E243000F99396 /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F9DD29258E243000F99396 /* CharacterDetailView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1099E41C25BB386F00A3EB7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69F9DCDF258CB21300F99396 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69F9DCE6258CB21300F99396;
+			remoteInfo = MortyUI;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		1099E41725BB386E00A3EB7D /* MortyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MortyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1099E41925BB386F00A3EB7D /* MortyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MortyUITests.swift; sourceTree = "<group>"; };
+		1099E41B25BB386F00A3EB7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1099E42525BB3C9A00A3EB7D /* Crash1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crash1Tests.swift; sourceTree = "<group>"; };
+		1099E42925BB3CA200A3EB7D /* Crash2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crash2Tests.swift; sourceTree = "<group>"; };
+		1099E42D25BB3CA800A3EB7D /* Crash3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crash3Tests.swift; sourceTree = "<group>"; };
+		1099E42F25BB3CAE00A3EB7D /* Crash4Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crash4Tests.swift; sourceTree = "<group>"; };
+		1099E43325BB3CB500A3EB7D /* Crash5Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crash5Tests.swift; sourceTree = "<group>"; };
+		1099E43725BB3CFB00A3EB7D /* Crash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crash.swift; sourceTree = "<group>"; };
 		6975BDF825A3256F00C72136 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		6975BDFB25A325DD00C72136 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		69A1201D2590EA920073E76F /* InfoRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoRowView.swift; sourceTree = "<group>"; };
@@ -69,12 +103,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1099E41425BB386E00A3EB7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		69F9DCE4258CB21300F99396 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				69F9DD14258E1F1600F99396 /* KingfisherSwiftUIStatic in Frameworks */,
+				1099E3FB25BB333800A3EB7D /* Alamofire in Frameworks */,
+				1099E40B25BB375B00A3EB7D /* FacebookShare in Frameworks */,
+				1099E40F25BB375B00A3EB7D /* FacebookGamingServices in Frameworks */,
 				69F9DCFC258CB2DF00F99396 /* Apollo in Frameworks */,
+				1099E41125BB375B00A3EB7D /* FacebookLogin in Frameworks */,
+				1099E3FF25BB335900A3EB7D /* CombineCocoa in Frameworks */,
+				1099E40325BB33B100A3EB7D /* Hero in Frameworks */,
+				1099E40725BB34E300A3EB7D /* Trace in Frameworks */,
+				1099E40D25BB375B00A3EB7D /* FacebookCore in Frameworks */,
 				69EF672C25A5B1E00009F5D1 /* ApolloSQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -82,6 +131,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1099E41825BB386F00A3EB7D /* MortyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1099E41925BB386F00A3EB7D /* MortyUITests.swift */,
+				1099E42525BB3C9A00A3EB7D /* Crash1Tests.swift */,
+				1099E42925BB3CA200A3EB7D /* Crash2Tests.swift */,
+				1099E42D25BB3CA800A3EB7D /* Crash3Tests.swift */,
+				1099E42F25BB3CAE00A3EB7D /* Crash4Tests.swift */,
+				1099E43325BB3CB500A3EB7D /* Crash5Tests.swift */,
+				1099E41B25BB386F00A3EB7D /* Info.plist */,
+			);
+			path = MortyUITests;
+			sourceTree = "<group>";
+		};
+		1099E43E25BB614100A3EB7D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				69F9DCEE258CB21500F99396 /* Assets.xcassets */,
+				69F9DCF3258CB21500F99396 /* Info.plist */,
+				69F9DCF0258CB21500F99396 /* Preview Content */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		6975BDF325A3254C00C72136 /* Search */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +239,7 @@
 			children = (
 				69EF672125A4C8710009F5D1 /* Codegen */,
 				69F9DCE9258CB21300F99396 /* MortyUI */,
+				1099E41825BB386F00A3EB7D /* MortyUITests */,
 				69F9DCE8258CB21300F99396 /* Products */,
 				69A120112590E1E80073E76F /* Frameworks */,
 			);
@@ -175,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				69F9DCE7258CB21300F99396 /* MortyUI.app */,
+				1099E41725BB386E00A3EB7D /* MortyUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -183,12 +258,11 @@
 			isa = PBXGroup;
 			children = (
 				69F9DCEA258CB21300F99396 /* MortyUIApp.swift */,
+				1099E43725BB3CFB00A3EB7D /* Crash.swift */,
 				69F9DD16258E1F2200F99396 /* Features */,
 				69F9DD0C258CB9C100F99396 /* GraphQL */,
 				69C794542590ADD1008EF633 /* Shared */,
-				69F9DCEE258CB21500F99396 /* Assets.xcassets */,
-				69F9DCF3258CB21500F99396 /* Info.plist */,
-				69F9DCF0258CB21500F99396 /* Preview Content */,
+				1099E43E25BB614100A3EB7D /* Supporting Files */,
 			);
 			path = MortyUI;
 			sourceTree = "<group>";
@@ -263,6 +337,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1099E41625BB386E00A3EB7D /* MortyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1099E41E25BB386F00A3EB7D /* Build configuration list for PBXNativeTarget "MortyUITests" */;
+			buildPhases = (
+				1099E41325BB386E00A3EB7D /* Sources */,
+				1099E41425BB386E00A3EB7D /* Frameworks */,
+				1099E41525BB386E00A3EB7D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1099E41D25BB386F00A3EB7D /* PBXTargetDependency */,
+			);
+			name = MortyUITests;
+			productName = MortyUITests;
+			productReference = 1099E41725BB386E00A3EB7D /* MortyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		69F9DCE6258CB21300F99396 /* MortyUI */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 69F9DCF6258CB21500F99396 /* Build configuration list for PBXNativeTarget "MortyUI" */;
@@ -270,6 +362,7 @@
 				69F9DCE3258CB21300F99396 /* Sources */,
 				69F9DCE4258CB21300F99396 /* Frameworks */,
 				69F9DCE5258CB21300F99396 /* Resources */,
+				1099E43B25BB41F200A3EB7D /* Bitrise Trace SDK - Upload dSYM's */,
 			);
 			buildRules = (
 			);
@@ -280,6 +373,14 @@
 				69F9DCFB258CB2DF00F99396 /* Apollo */,
 				69F9DD13258E1F1600F99396 /* KingfisherSwiftUIStatic */,
 				69EF672B25A5B1E00009F5D1 /* ApolloSQLite */,
+				1099E3FA25BB333800A3EB7D /* Alamofire */,
+				1099E3FE25BB335900A3EB7D /* CombineCocoa */,
+				1099E40225BB33B100A3EB7D /* Hero */,
+				1099E40625BB34E300A3EB7D /* Trace */,
+				1099E40A25BB375B00A3EB7D /* FacebookShare */,
+				1099E40C25BB375B00A3EB7D /* FacebookCore */,
+				1099E40E25BB375B00A3EB7D /* FacebookGamingServices */,
+				1099E41025BB375B00A3EB7D /* FacebookLogin */,
 			);
 			productName = MortyUI;
 			productReference = 69F9DCE7258CB21300F99396 /* MortyUI.app */;
@@ -294,13 +395,17 @@
 				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
+					1099E41625BB386E00A3EB7D = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 69F9DCE6258CB21300F99396;
+					};
 					69F9DCE6258CB21300F99396 = {
 						CreatedOnToolsVersion = 12.3;
 					};
 				};
 			};
 			buildConfigurationList = 69F9DCE2258CB21300F99396 /* Build configuration list for PBXProject "MortyUI" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -311,17 +416,30 @@
 			packageReferences = (
 				69F9DCFA258CB2DF00F99396 /* XCRemoteSwiftPackageReference "apollo-ios" */,
 				69F9DD12258E1F1500F99396 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				1099E3F925BB333800A3EB7D /* XCRemoteSwiftPackageReference "Alamofire" */,
+				1099E3FD25BB335900A3EB7D /* XCRemoteSwiftPackageReference "CombineCocoa" */,
+				1099E40125BB33B100A3EB7D /* XCRemoteSwiftPackageReference "Hero" */,
+				1099E40525BB34E300A3EB7D /* XCRemoteSwiftPackageReference "trace-cocoa-sdk" */,
+				1099E40925BB375B00A3EB7D /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
 			);
 			productRefGroup = 69F9DCE8258CB21300F99396 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				69F9DCE6258CB21300F99396 /* MortyUI */,
+				1099E41625BB386E00A3EB7D /* MortyUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1099E41525BB386E00A3EB7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		69F9DCE5258CB21300F99396 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -335,12 +453,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1099E43B25BB41F200A3EB7D /* Bitrise Trace SDK - Upload dSYM's */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Bitrise Trace SDK - Upload dSYM's";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\nset +o posix\n\necho \"Bitrise Trace SDK - starting Upload dSYM's\"\n\n# See script header for more information - https://github.com/bitrise-io/trace-cocoa-sdk/blob/main/UploadDSYM/main.swift#L4\n\n# Run script\n/usr/bin/xcrun --sdk macosx swift <(curl -Ls --retry 3 --connect-timeout 20 -H \"Cache-Control: max-age=604800\" https://raw.githubusercontent.com/bitrise-io/trace-cocoa-sdk/main/UploadDSYM/main.swift) Debug\n\n# Script logs can be viewed in Xcode report navigator or Bitrise app build logs\n\necho \"Bitrise Trace SDK - finished Upload dSYM's\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		1099E41325BB386E00A3EB7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1099E43025BB3CAE00A3EB7D /* Crash4Tests.swift in Sources */,
+				1099E43425BB3CB500A3EB7D /* Crash5Tests.swift in Sources */,
+				1099E42A25BB3CA200A3EB7D /* Crash2Tests.swift in Sources */,
+				1099E41A25BB386F00A3EB7D /* MortyUITests.swift in Sources */,
+				1099E42625BB3C9A00A3EB7D /* Crash1Tests.swift in Sources */,
+				1099E42E25BB3CA800A3EB7D /* Crash3Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		69F9DCE3258CB21300F99396 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6975BDF925A3256F00C72136 /* SearchView.swift in Sources */,
+				1099E43825BB3CFB00A3EB7D /* Crash.swift in Sources */,
 				69A120262590ECB00073E76F /* EpisodesListViewModel.swift in Sources */,
 				69F9DD07258CB4B300F99396 /* API.swift in Sources */,
 				69A1201E2590EA920073E76F /* InfoRowView.swift in Sources */,
@@ -366,7 +520,53 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		1099E41D25BB386F00A3EB7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69F9DCE6258CB21300F99396 /* MortyUI */;
+			targetProxy = 1099E41C25BB386F00A3EB7D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		1099E41F25BB386F00A3EB7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 72SA8V3WYL;
+				INFOPLIST_FILE = MortyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.bitrise.morty.MortyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MortyUI;
+			};
+			name = Debug;
+		};
+		1099E42025BB386F00A3EB7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 72SA8V3WYL;
+				INFOPLIST_FILE = MortyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.bitrise.morty.MortyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MortyUI;
+			};
+			name = Release;
+		};
 		69F9DCF4258CB21500F99396 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -489,8 +689,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"MortyUI/Preview Content\"";
-				DEVELOPMENT_TEAM = Z6P74P6T99;
+				DEVELOPMENT_TEAM = 72SA8V3WYL;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MortyUI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -498,7 +699,15 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.thomasricouard.MortyUI;
+				MARKETING_VERSION = 1.0.0;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-l",
+					"c++",
+					"-l",
+					z,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.bitrise.morty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -512,7 +721,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MortyUI/Preview Content\"";
-				DEVELOPMENT_TEAM = Z6P74P6T99;
+				DEVELOPMENT_TEAM = 72SA8V3WYL;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MortyUI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -520,7 +729,15 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.thomasricouard.MortyUI;
+				MARKETING_VERSION = 1.0.0;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-l",
+					"c++",
+					"-l",
+					z,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.bitrise.morty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -530,6 +747,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1099E41E25BB386F00A3EB7D /* Build configuration list for PBXNativeTarget "MortyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1099E41F25BB386F00A3EB7D /* Debug */,
+				1099E42025BB386F00A3EB7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		69F9DCE2258CB21300F99396 /* Build configuration list for PBXProject "MortyUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -551,6 +777,46 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		1099E3F925BB333800A3EB7D /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.1;
+			};
+		};
+		1099E3FD25BB335900A3EB7D /* XCRemoteSwiftPackageReference "CombineCocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CombineCommunity/CombineCocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.2;
+			};
+		};
+		1099E40125BB33B100A3EB7D /* XCRemoteSwiftPackageReference "Hero" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/HeroTransitions/Hero.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+		1099E40525BB34E300A3EB7D /* XCRemoteSwiftPackageReference "trace-cocoa-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bitrise-io/trace-cocoa-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.7.11;
+			};
+		};
+		1099E40925BB375B00A3EB7D /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
 		69F9DCFA258CB2DF00F99396 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
@@ -570,6 +836,46 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		1099E3FA25BB333800A3EB7D /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1099E3F925BB333800A3EB7D /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		1099E3FE25BB335900A3EB7D /* CombineCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1099E3FD25BB335900A3EB7D /* XCRemoteSwiftPackageReference "CombineCocoa" */;
+			productName = CombineCocoa;
+		};
+		1099E40225BB33B100A3EB7D /* Hero */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1099E40125BB33B100A3EB7D /* XCRemoteSwiftPackageReference "Hero" */;
+			productName = Hero;
+		};
+		1099E40625BB34E300A3EB7D /* Trace */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1099E40525BB34E300A3EB7D /* XCRemoteSwiftPackageReference "trace-cocoa-sdk" */;
+			productName = Trace;
+		};
+		1099E40A25BB375B00A3EB7D /* FacebookShare */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1099E40925BB375B00A3EB7D /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookShare;
+		};
+		1099E40C25BB375B00A3EB7D /* FacebookCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1099E40925BB375B00A3EB7D /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookCore;
+		};
+		1099E40E25BB375B00A3EB7D /* FacebookGamingServices */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1099E40925BB375B00A3EB7D /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookGamingServices;
+		};
+		1099E41025BB375B00A3EB7D /* FacebookLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1099E40925BB375B00A3EB7D /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookLogin;
+		};
 		69EF672B25A5B1E00009F5D1 /* ApolloSQLite */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 69F9DCFA258CB2DF00F99396 /* XCRemoteSwiftPackageReference "apollo-ios" */;

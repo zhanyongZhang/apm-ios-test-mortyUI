@@ -29,6 +29,11 @@ struct CharactersListView: View {
             .onAppear {
                 data.fetchCharacters()
             }
+            .navigationBarItems(leading: Button("💥", action: {
+                Crash.crash()
+            }), trailing: Button("💥", action: {
+                fatalErrorCrash()
+            }))
         }
     }
     

@@ -51,7 +51,9 @@ struct LocationDetailView: View {
                                     }
                                     Text(character.name!)
                                 }
-                            })
+                            }).navigationBarItems(trailing: Button("💥", action: {
+                                Crash.backgroundThreadCrash()
+                            }))
                     }
                 }
             }
