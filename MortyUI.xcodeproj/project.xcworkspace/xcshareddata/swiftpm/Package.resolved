@@ -114,8 +114,8 @@
         "repositoryURL": "https://github.com/apple/swift-argument-parser",
         "state": {
           "branch": null,
-          "revision": "92646c0cdbaca076c8d3d0207891785b3379cbff",
-          "version": "0.3.1"
+          "revision": "9564d61b08a5335ae0a36f789a7d71493eacadfc",
+          "version": "0.3.2"
         }
       },
       {
@@ -132,8 +132,8 @@
         "repositoryURL": "https://github.com/bitrise-io/trace-cocoa-sdk.git",
         "state": {
           "branch": null,
-          "revision": "29395ed498b8a69360805b31ed627e1779b1c668",
-          "version": "1.7.11"
+          "revision": "035246c6d7b347c8de0463babf00d506681f5d55",
+          "version": "1.7.12"
         }
       }
     ]
