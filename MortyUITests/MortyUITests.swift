@@ -28,6 +28,8 @@ final class MortyUITests: XCTestCase {
         app.launch()
         
         sleep(10)
+        
+        _ = app.wait(for: .runningForeground, timeout: 5)
     }
     
     func testLaunch_foregoundToBackground() throws {
@@ -57,6 +59,8 @@ final class MortyUITests: XCTestCase {
             
             sleep(10)
         }
+        
+        _ = app.wait(for: .runningForeground, timeout: 5)
     }
 
     func testLaunch_performance() throws {

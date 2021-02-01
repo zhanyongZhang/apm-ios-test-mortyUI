@@ -55,7 +55,9 @@ final class Crash2Tests: XCTestCase {
         
         // Sends crash report
         
-        sleep(10)
+        sleep(15)
+        
+        _ = app.wait(for: .runningForeground, timeout: 5)
     }
     
     func testOutOfBound_crash() throws {
@@ -90,6 +92,8 @@ final class Crash2Tests: XCTestCase {
         
         // Sends crash report
         
-        sleep(10)
+        sleep(15)
+        
+        _ = app.wait(for: .runningForeground, timeout: 5)
     }
 }

@@ -59,7 +59,9 @@ final class Crash4Tests: XCTestCase {
         
         // Sends crash report
         
-        sleep(10)
+        sleep(15)
+        
+        _ = app.wait(for: .runningForeground, timeout: 5)
     }
     
     func testMainThread_crash() throws {
@@ -100,6 +102,8 @@ final class Crash4Tests: XCTestCase {
         
         // Sends crash report
         
-        sleep(10)
+        sleep(15)
+        
+        _ = app.wait(for: .runningForeground, timeout: 5)
     }
 }

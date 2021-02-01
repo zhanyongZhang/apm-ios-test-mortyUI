@@ -52,6 +52,8 @@ final class Crash5Tests: XCTestCase {
         
         // Sends crash report
         
-        sleep(10)
+        sleep(15)
+        
+        _ = app.wait(for: .runningForeground, timeout: 5)
     }
 }

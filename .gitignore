@@ -92,3 +92,5 @@ iOSInjectionProject/
 MortyUI/GraphQL/apollo/
 MortyUI/GraphQL/apollo.tar.gz
 MortyUI/GraphQL/operationIDs.json
+
+dSYMs.zip
