@@ -26,6 +26,11 @@ struct TabbarView: View {
                 .tabItem {
                     Label("Search", systemImage: "magnifyingglass")
                 }
+            MoreView()
+                .tabItem {
+                    Label("More", systemImage: "ellipsis.circle.fill")
+                }
+            
         }
     }
 }

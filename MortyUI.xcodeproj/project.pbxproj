@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1002D9A825CC63E200A83E8D /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1002D9A725CC63E200A83E8D /* MoreView.swift */; };
 		10222A1825C18FCA00881344 /* bitrise_configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 10222A1725C18FC900881344 /* bitrise_configuration.plist */; };
 		1099E3FB25BB333800A3EB7D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 1099E3FA25BB333800A3EB7D /* Alamofire */; };
 		1099E3FF25BB335900A3EB7D /* CombineCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 1099E3FE25BB335900A3EB7D /* CombineCocoa */; };
@@ -64,6 +65,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1002D9A725CC63E200A83E8D /* MoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MoreView.swift; path = More/MoreView.swift; sourceTree = "<group>"; };
 		10222A1725C18FC900881344 /* bitrise_configuration.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = bitrise_configuration.plist; sourceTree = SOURCE_ROOT; };
 		1099E41725BB386E00A3EB7D /* MortyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MortyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1099E41925BB386F00A3EB7D /* MortyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MortyUITests.swift; sourceTree = "<group>"; };
@@ -298,6 +300,7 @@
 				69A120392591E62C0073E76F /* Locations */,
 				69C794752590D530008EF633 /* Episodes */,
 				6975BDF325A3254C00C72136 /* Search */,
+				1002D9A725CC63E200A83E8D /* MoreView.swift */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -505,6 +508,7 @@
 				69F9DD1F258E204F00F99396 /* CharactersListView.swift in Sources */,
 				69F9DD23258E206400F99396 /* CharactersListViewModel.swift in Sources */,
 				69A1203D2591E6500073E76F /* LocationsListView.swift in Sources */,
+				1002D9A825CC63E200A83E8D /* MoreView.swift in Sources */,
 				69F9DD0A258CB58900F99396 /* Network.swift in Sources */,
 				69A120552591EF490073E76F /* LocationsListViewModel.swift in Sources */,
 				69F9DD1A258E1F3900F99396 /* TabbarView.swift in Sources */,
@@ -695,7 +699,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 100;
+				CURRENT_PROJECT_VERSION = 101;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"MortyUI/Preview Content\"";
 				DEVELOPMENT_TEAM = 72SA8V3WYL;
@@ -706,7 +710,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.7.19.2;
+				MARKETING_VERSION = 1.7.19.3;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-l",
@@ -727,7 +731,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 100;
+				CURRENT_PROJECT_VERSION = 101;
 				DEVELOPMENT_ASSET_PATHS = "\"MortyUI/Preview Content\"";
 				DEVELOPMENT_TEAM = 72SA8V3WYL;
 				ENABLE_PREVIEWS = YES;
@@ -737,7 +741,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.7.19.2;
+				MARKETING_VERSION = 1.7.19.3;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-l",
