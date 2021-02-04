@@ -23,7 +23,6 @@
 		1099E43025BB3CAE00A3EB7D /* Crash4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1099E42F25BB3CAE00A3EB7D /* Crash4Tests.swift */; };
 		1099E43425BB3CB500A3EB7D /* Crash5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1099E43325BB3CB500A3EB7D /* Crash5Tests.swift */; };
 		1099E43825BB3CFB00A3EB7D /* Crash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1099E43725BB3CFB00A3EB7D /* Crash.swift */; };
-		109DA89625CC480300E5661B /* AppIcon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 109DA89525CC480300E5661B /* AppIcon.xcassets */; };
 		6975BDF925A3256F00C72136 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6975BDF825A3256F00C72136 /* SearchView.swift */; };
 		6975BDFC25A325DD00C72136 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6975BDFB25A325DD00C72136 /* SearchViewModel.swift */; };
 		69A1201E2590EA920073E76F /* InfoRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A1201D2590EA920073E76F /* InfoRowView.swift */; };
@@ -75,7 +74,6 @@
 		1099E42F25BB3CAE00A3EB7D /* Crash4Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crash4Tests.swift; sourceTree = "<group>"; };
 		1099E43325BB3CB500A3EB7D /* Crash5Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crash5Tests.swift; sourceTree = "<group>"; };
 		1099E43725BB3CFB00A3EB7D /* Crash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crash.swift; sourceTree = "<group>"; };
-		109DA89525CC480300E5661B /* AppIcon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = AppIcon.xcassets; path = ../../Downloads/AppIcons/AppIcon.xcassets; sourceTree = "<group>"; };
 		6975BDF825A3256F00C72136 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		6975BDFB25A325DD00C72136 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		69A1201D2590EA920073E76F /* InfoRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoRowView.swift; sourceTree = "<group>"; };
@@ -153,7 +151,6 @@
 			isa = PBXGroup;
 			children = (
 				69F9DCEE258CB21500F99396 /* Assets.xcassets */,
-				109DA89525CC480300E5661B /* AppIcon.xcassets */,
 				69F9DCF3258CB21500F99396 /* Info.plist */,
 				69F9DCF0258CB21500F99396 /* Preview Content */,
 			);
@@ -454,7 +451,6 @@
 				69F9DCFF258CB3E200F99396 /* schema.json in Resources */,
 				69F9DD02258CB40400F99396 /* Queries.graphql in Resources */,
 				10222A1825C18FCA00881344 /* bitrise_configuration.plist in Resources */,
-				109DA89625CC480300E5661B /* AppIcon.xcassets in Resources */,
 				69F9DCEF258CB21500F99396 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -710,7 +706,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.7.19.1;
+				MARKETING_VERSION = 1.7.19.2;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-l",
@@ -741,7 +737,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.7.19.1;
+				MARKETING_VERSION = 1.7.19.2;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-l",
