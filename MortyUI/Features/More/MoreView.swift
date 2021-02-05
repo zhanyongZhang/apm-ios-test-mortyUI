@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct MoreView: View {
     
@@ -18,8 +19,10 @@ struct MoreView: View {
                     Text(configurationType)
                 }
                 Section(header: Text("Application support directory")) {
-                    ForEach(crashDirectory, id: \.self) { string in
-                        Text(string)
+                    ForEach(crashDirectory, id: \.self) { name in
+                        Button(name) {
+                            share(file: name)
+                        }.disabled(!name.contains("."))
                     }
                 }
             }
@@ -28,6 +31,23 @@ struct MoreView: View {
         }
     }
     
+    // MARK: - Share
+    
+    func share(file path: String) {
+        let root = NSSearchPathForDirectoriesInDomains(.applicationSupportDirectory, .userDomainMask, true)[0]
+        let file = root + "/" + path
+        let url = URL(fileURLWithPath: file)
+        let viewController = UIActivityViewController(
+            activityItems: [url],
+            applicationActivities: nil
+        )
+        
+        UIApplication.shared.windows.first?.rootViewController?.present(
+            viewController,
+            animated: true,
+            completion: nil
+        )
+    }
     
     // MARK: - Configuration
     
