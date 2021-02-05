@@ -132,8 +132,8 @@
         "repositoryURL": "https://github.com/bitrise-io/trace-cocoa-sdk.git",
         "state": {
           "branch": null,
-          "revision": "5becaf61b561b994e00c0ed500e50c2bdf22131f",
-          "version": "1.7.19"
+          "revision": "7b7392df96a5bb9fdbee6ab754330363aaf9b3cb",
+          "version": "1.7.20"
         }
       }
     ]
