@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1002D9A825CC63E200A83E8D /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1002D9A725CC63E200A83E8D /* MoreView.swift */; };
+		1002DA9925CE00F600A83E8D /* libTrace.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1002DA7825CE00EA00A83E8D /* libTrace.a */; };
 		10222A1825C18FCA00881344 /* bitrise_configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 10222A1725C18FC900881344 /* bitrise_configuration.plist */; };
 		1099E3FB25BB333800A3EB7D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 1099E3FA25BB333800A3EB7D /* Alamofire */; };
 		1099E3FF25BB335900A3EB7D /* CombineCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 1099E3FE25BB335900A3EB7D /* CombineCocoa */; };
 		1099E40325BB33B100A3EB7D /* Hero in Frameworks */ = {isa = PBXBuildFile; productRef = 1099E40225BB33B100A3EB7D /* Hero */; };
-		1099E40725BB34E300A3EB7D /* Trace in Frameworks */ = {isa = PBXBuildFile; productRef = 1099E40625BB34E300A3EB7D /* Trace */; };
 		1099E40B25BB375B00A3EB7D /* FacebookShare in Frameworks */ = {isa = PBXBuildFile; productRef = 1099E40A25BB375B00A3EB7D /* FacebookShare */; };
 		1099E40D25BB375B00A3EB7D /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = 1099E40C25BB375B00A3EB7D /* FacebookCore */; };
 		1099E40F25BB375B00A3EB7D /* FacebookGamingServices in Frameworks */ = {isa = PBXBuildFile; productRef = 1099E40E25BB375B00A3EB7D /* FacebookGamingServices */; };
@@ -55,6 +55,118 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1002DA7725CE00EA00A83E8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1002DA5225CE00E900A83E8D /* Trace.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 104A694C2293FB060065F218;
+			remoteInfo = Trace;
+		};
+		1002DA7925CE00EA00A83E8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1002DA5225CE00E900A83E8D /* Trace.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 104A69622293FDA20065F218;
+			remoteInfo = Tests;
+		};
+		1002DA7B25CE00EA00A83E8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1002DA5225CE00E900A83E8D /* Trace.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 104A69A5229403370065F218;
+			remoteInfo = InteroperabilityTests;
+		};
+		1002DA7D25CE00EA00A83E8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1002DA5225CE00E900A83E8D /* Trace.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 100993DA25003BB1006C7FB4;
+			remoteInfo = TraceInternal;
+		};
+		1002DA7F25CE00EA00A83E8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1002DA5225CE00E900A83E8D /* Trace.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 108CDED423FC544800153BEB;
+			remoteInfo = CrashReportingTests;
+		};
+		1002DA8125CE00EA00A83E8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1002DA5225CE00E900A83E8D /* Trace.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 104A6973229401260065F218;
+			remoteInfo = iOSDemo;
+		};
+		1002DA8325CE00EA00A83E8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1002DA5225CE00E900A83E8D /* Trace.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 104A6986229401280065F218;
+			remoteInfo = iOSDemoTests;
+		};
+		1002DA8525CE00EA00A83E8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1002DA5225CE00E900A83E8D /* Trace.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 104A6991229401280065F218;
+			remoteInfo = iOSDemoUITests;
+		};
+		1002DA8725CE00EA00A83E8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1002DA5225CE00E900A83E8D /* Trace.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 80AD1A3C2473E806001DA4E2;
+			remoteInfo = PerformanceTests;
+		};
+		1002DA8925CE00EA00A83E8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1002DA5225CE00E900A83E8D /* Trace.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 800DC5F6247D6D6C00FC8C73;
+			remoteInfo = PerformanceUITests;
+		};
+		1002DA8B25CE00EA00A83E8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1002DA5225CE00E900A83E8D /* Trace.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 109B3A2824F3BE3F00E44676;
+			remoteInfo = SwiftUIDemo;
+		};
+		1002DA8D25CE00EA00A83E8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1002DA5225CE00E900A83E8D /* Trace.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 109B3A3D24F3BE4200E44676;
+			remoteInfo = SwiftUIDemoUITests;
+		};
+		1002DA8F25CE00EA00A83E8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1002DA5225CE00E900A83E8D /* Trace.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 10FB1D2025057E2E00850A58;
+			remoteInfo = ObjCDemo;
+		};
+		1002DA9125CE00EA00A83E8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1002DA5225CE00E900A83E8D /* Trace.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1070AB9024748AAE00F15090;
+			remoteInfo = UploadDSYM;
+		};
+		1002DA9325CE00EA00A83E8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1002DA5225CE00E900A83E8D /* Trace.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1070AB9B24748CD800F15090;
+			remoteInfo = UploadDSYMTests;
+		};
+		1002DA9525CE00EA00A83E8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1002DA5225CE00E900A83E8D /* Trace.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 10EF71F72587865D0048789A;
+			remoteInfo = UploadSystemSymbols;
+		};
 		1099E41C25BB386F00A3EB7D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 69F9DCDF258CB21300F99396 /* Project object */;
@@ -66,6 +178,7 @@
 
 /* Begin PBXFileReference section */
 		1002D9A725CC63E200A83E8D /* MoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MoreView.swift; path = More/MoreView.swift; sourceTree = "<group>"; };
+		1002DA5225CE00E900A83E8D /* Trace.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Trace.xcodeproj; path = "trace-cocoa-sdk/Trace.xcodeproj"; sourceTree = "<group>"; };
 		10222A1725C18FC900881344 /* bitrise_configuration.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = bitrise_configuration.plist; sourceTree = SOURCE_ROOT; };
 		1099E41725BB386E00A3EB7D /* MortyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MortyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1099E41925BB386F00A3EB7D /* MortyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MortyUITests.swift; sourceTree = "<group>"; };
@@ -126,8 +239,8 @@
 				1099E41125BB375B00A3EB7D /* FacebookLogin in Frameworks */,
 				1099E3FF25BB335900A3EB7D /* CombineCocoa in Frameworks */,
 				1099E40325BB33B100A3EB7D /* Hero in Frameworks */,
-				1099E40725BB34E300A3EB7D /* Trace in Frameworks */,
 				1099E40D25BB375B00A3EB7D /* FacebookCore in Frameworks */,
+				1002DA9925CE00F600A83E8D /* libTrace.a in Frameworks */,
 				69EF672C25A5B1E00009F5D1 /* ApolloSQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,6 +248,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1002DA5325CE00E900A83E8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1002DA7825CE00EA00A83E8D /* libTrace.a */,
+				1002DA7A25CE00EA00A83E8D /* Tests.xctest */,
+				1002DA7C25CE00EA00A83E8D /* InteroperabilityTests.xctest */,
+				1002DA7E25CE00EA00A83E8D /* libTraceInternal.a */,
+				1002DA8025CE00EA00A83E8D /* CrashReportingTests.xctest */,
+				1002DA8225CE00EA00A83E8D /* iOSDemo.app */,
+				1002DA8425CE00EA00A83E8D /* iOSDemoTests.xctest */,
+				1002DA8625CE00EA00A83E8D /* iOSDemoUITests.xctest */,
+				1002DA8825CE00EA00A83E8D /* PerformanceTests.xctest */,
+				1002DA8A25CE00EA00A83E8D /* PerformanceUITests.xctest */,
+				1002DA8C25CE00EA00A83E8D /* SwiftUIDemo.app */,
+				1002DA8E25CE00EA00A83E8D /* SwiftUIDemoUITests.xctest */,
+				1002DA9025CE00EA00A83E8D /* ObjCDemo.app */,
+				1002DA9225CE00EA00A83E8D /* UploadDSYM */,
+				1002DA9425CE00EA00A83E8D /* UploadDSYMTests.xctest */,
+				1002DA9625CE00EA00A83E8D /* UploadSystemSymbols */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		1099E41825BB386F00A3EB7D /* MortyUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,6 +377,7 @@
 		69F9DCDE258CB21300F99396 = {
 			isa = PBXGroup;
 			children = (
+				1002DA5225CE00E900A83E8D /* Trace.xcodeproj */,
 				69EF672125A4C8710009F5D1 /* Codegen */,
 				69F9DCE9258CB21300F99396 /* MortyUI */,
 				1099E41825BB386F00A3EB7D /* MortyUITests */,
@@ -382,7 +519,6 @@
 				1099E3FA25BB333800A3EB7D /* Alamofire */,
 				1099E3FE25BB335900A3EB7D /* CombineCocoa */,
 				1099E40225BB33B100A3EB7D /* Hero */,
-				1099E40625BB34E300A3EB7D /* Trace */,
 				1099E40A25BB375B00A3EB7D /* FacebookShare */,
 				1099E40C25BB375B00A3EB7D /* FacebookCore */,
 				1099E40E25BB375B00A3EB7D /* FacebookGamingServices */,
@@ -425,11 +561,16 @@
 				1099E3F925BB333800A3EB7D /* XCRemoteSwiftPackageReference "Alamofire" */,
 				1099E3FD25BB335900A3EB7D /* XCRemoteSwiftPackageReference "CombineCocoa" */,
 				1099E40125BB33B100A3EB7D /* XCRemoteSwiftPackageReference "Hero" */,
-				1099E40525BB34E300A3EB7D /* XCRemoteSwiftPackageReference "trace-cocoa-sdk" */,
 				1099E40925BB375B00A3EB7D /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
 			);
 			productRefGroup = 69F9DCE8258CB21300F99396 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1002DA5325CE00E900A83E8D /* Products */;
+					ProjectRef = 1002DA5225CE00E900A83E8D /* Trace.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				69F9DCE6258CB21300F99396 /* MortyUI */,
@@ -437,6 +578,121 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1002DA7825CE00EA00A83E8D /* libTrace.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTrace.a;
+			remoteRef = 1002DA7725CE00EA00A83E8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1002DA7A25CE00EA00A83E8D /* Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = Tests.xctest;
+			remoteRef = 1002DA7925CE00EA00A83E8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1002DA7C25CE00EA00A83E8D /* InteroperabilityTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = InteroperabilityTests.xctest;
+			remoteRef = 1002DA7B25CE00EA00A83E8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1002DA7E25CE00EA00A83E8D /* libTraceInternal.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTraceInternal.a;
+			remoteRef = 1002DA7D25CE00EA00A83E8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1002DA8025CE00EA00A83E8D /* CrashReportingTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CrashReportingTests.xctest;
+			remoteRef = 1002DA7F25CE00EA00A83E8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1002DA8225CE00EA00A83E8D /* iOSDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = iOSDemo.app;
+			remoteRef = 1002DA8125CE00EA00A83E8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1002DA8425CE00EA00A83E8D /* iOSDemoTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = iOSDemoTests.xctest;
+			remoteRef = 1002DA8325CE00EA00A83E8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1002DA8625CE00EA00A83E8D /* iOSDemoUITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = iOSDemoUITests.xctest;
+			remoteRef = 1002DA8525CE00EA00A83E8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1002DA8825CE00EA00A83E8D /* PerformanceTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = PerformanceTests.xctest;
+			remoteRef = 1002DA8725CE00EA00A83E8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1002DA8A25CE00EA00A83E8D /* PerformanceUITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = PerformanceUITests.xctest;
+			remoteRef = 1002DA8925CE00EA00A83E8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1002DA8C25CE00EA00A83E8D /* SwiftUIDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SwiftUIDemo.app;
+			remoteRef = 1002DA8B25CE00EA00A83E8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1002DA8E25CE00EA00A83E8D /* SwiftUIDemoUITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwiftUIDemoUITests.xctest;
+			remoteRef = 1002DA8D25CE00EA00A83E8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1002DA9025CE00EA00A83E8D /* ObjCDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = ObjCDemo.app;
+			remoteRef = 1002DA8F25CE00EA00A83E8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1002DA9225CE00EA00A83E8D /* UploadDSYM */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = UploadDSYM;
+			remoteRef = 1002DA9125CE00EA00A83E8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1002DA9425CE00EA00A83E8D /* UploadDSYMTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UploadDSYMTests.xctest;
+			remoteRef = 1002DA9325CE00EA00A83E8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1002DA9625CE00EA00A83E8D /* UploadSystemSymbols */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = UploadSystemSymbols;
+			remoteRef = 1002DA9525CE00EA00A83E8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1099E41525BB386E00A3EB7D /* Resources */ = {
@@ -813,14 +1069,6 @@
 				minimumVersion = 1.5.0;
 			};
 		};
-		1099E40525BB34E300A3EB7D /* XCRemoteSwiftPackageReference "trace-cocoa-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/bitrise-io/trace-cocoa-sdk.git";
-			requirement = {
-				kind = exactVersion;
-				version = 1.7.22;
-			};
-		};
 		1099E40925BB375B00A3EB7D /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/facebook/facebook-ios-sdk.git";
@@ -862,11 +1110,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1099E40125BB33B100A3EB7D /* XCRemoteSwiftPackageReference "Hero" */;
 			productName = Hero;
-		};
-		1099E40625BB34E300A3EB7D /* Trace */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1099E40525BB34E300A3EB7D /* XCRemoteSwiftPackageReference "trace-cocoa-sdk" */;
-			productName = Trace;
 		};
 		1099E40A25BB375B00A3EB7D /* FacebookShare */ = {
 			isa = XCSwiftPackageProductDependency;
