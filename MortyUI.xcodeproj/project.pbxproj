@@ -818,7 +818,7 @@
 			repositoryURL = "https://github.com/bitrise-io/trace-cocoa-sdk.git";
 			requirement = {
 				kind = exactVersion;
-				version = 1.7.21;
+				version = 1.7.22;
 			};
 		};
 		1099E40925BB375B00A3EB7D /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
