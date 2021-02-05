@@ -3215,7 +3215,6 @@
 				100993D325000994006C7FB4 /* Headers */,
 				104A69482293FB060065F218 /* Sources */,
 				104A69C5229407BE0065F218 /* Create Swift header and copy to build path */,
-				104A695A2293FC340065F218 /* Run SwiftLint linter tool */,
 				1053AAC4240543A600F90393 /* Run Pecker linter tool - Disabled */,
 				2B822A28715DC06882073709 /* Frameworks */,
 			);
@@ -3747,25 +3746,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "SDKVERSION=$(xcodebuild -showBuildSettings | grep \"CURRENT_PROJECT_VERSION\" | sed 's/[ ]*CURRENT_PROJECT_VERSION = //')\nXCODE_VERSION=$(xcodebuild -version | grep 'Xcode\\s[0-9.]*')\nSWIFT_VERSION=$(swift --version | grep \"Swift.version.[0-9.]*\")\n\necho \"Xcode version ${XCODE_VERSION} using Swift ${SWIFT_VERSION}\"\necho \"Trace SDK version ${SDKVERSION}\"\n\n";
-			showEnvVarsInLog = 0;
-		};
-		104A695A2293FC340065F218 /* Run SwiftLint linter tool */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Run SwiftLint linter tool";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint --config .swiftlint.yml\nelse\n    echo \"warning: SwiftLint not installed, use brew install swiftlint\"\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		104A69C5229407BE0065F218 /* Create Swift header and copy to build path */ = {
