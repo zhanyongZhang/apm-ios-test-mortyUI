@@ -1766,11 +1766,15 @@ void kscrashreport_writeStandardReport(const KSCrash_MonitorContext* const monit
 
         if(g_userInfoJSON != NULL)
         {
+            KSLOG_TRACE("g_userInfoJSON has data to write");
+            
             addJSONElement(writer, KSCrashField_User, g_userInfoJSON, false);
             ksfu_flushBufferedWriter(&bufferedWriter);
         }
         else
         {
+            KSLOG_TRACE("g_userInfoJSON is nil");
+            
             writer->beginObject(writer, KSCrashField_User);
         }
         if(g_userSectionWriteCallback != NULL)
@@ -1802,16 +1806,14 @@ void kscrashreport_setUserInfoJSON(const char* const userInfoJSON)
     pthread_mutex_lock(&mutex);
     if(g_userInfoJSON != NULL)
     {
+        KSLOG_TRACE("set g_userInfoJSON not null");
         free((void*)g_userInfoJSON);
     }
-    if(userInfoJSON == NULL)
-    {
-        g_userInfoJSON = NULL;
-    }
-    else
-    {
-        g_userInfoJSON = strdup(userInfoJSON);
-    }
+    
+    KSLOG_TRACE("set userInfoJSON finally");
+    
+    g_userInfoJSON = strdup(userInfoJSON);
+    
     pthread_mutex_unlock(&mutex);
 }
 

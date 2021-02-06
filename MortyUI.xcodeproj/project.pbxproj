@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1002D9A825CC63E200A83E8D /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1002D9A725CC63E200A83E8D /* MoreView.swift */; };
-		1002DA9925CE00F600A83E8D /* libTrace.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1002DA7825CE00EA00A83E8D /* libTrace.a */; };
 		10222A1825C18FCA00881344 /* bitrise_configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 10222A1725C18FC900881344 /* bitrise_configuration.plist */; };
 		1099E3FB25BB333800A3EB7D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 1099E3FA25BB333800A3EB7D /* Alamofire */; };
 		1099E3FF25BB335900A3EB7D /* CombineCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 1099E3FE25BB335900A3EB7D /* CombineCocoa */; };
@@ -167,6 +166,13 @@
 			remoteGlobalIDString = 10EF71F72587865D0048789A;
 			remoteInfo = UploadSystemSymbols;
 		};
+		1002DAB125CE11AF00A83E8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1002DA5225CE00E900A83E8D /* Trace.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 104A694B2293FB060065F218;
+			remoteInfo = Trace;
+		};
 		1099E41C25BB386F00A3EB7D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 69F9DCDF258CB21300F99396 /* Project object */;
@@ -240,7 +246,6 @@
 				1099E3FF25BB335900A3EB7D /* CombineCocoa in Frameworks */,
 				1099E40325BB33B100A3EB7D /* Hero in Frameworks */,
 				1099E40D25BB375B00A3EB7D /* FacebookCore in Frameworks */,
-				1002DA9925CE00F600A83E8D /* libTrace.a in Frameworks */,
 				69EF672C25A5B1E00009F5D1 /* ApolloSQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -510,6 +515,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				1002DAB225CE11AF00A83E8D /* PBXTargetDependency */,
 			);
 			name = MortyUI;
 			packageProductDependencies = (
@@ -785,6 +791,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1002DAB225CE11AF00A83E8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Trace;
+			targetProxy = 1002DAB125CE11AF00A83E8D /* PBXContainerItemProxy */;
+		};
 		1099E41D25BB386F00A3EB7D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 69F9DCE6258CB21300F99396 /* MortyUI */;
@@ -973,6 +984,8 @@
 					"c++",
 					"-l",
 					z,
+					"-force_load",
+					"'$(BUILT_PRODUCTS_DIR)/libTrace.a'",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.bitrise.morty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1004,6 +1017,8 @@
 					"c++",
 					"-l",
 					z,
+					"-force_load",
+					"'$(BUILT_PRODUCTS_DIR)/libTrace.a'",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.bitrise.morty;
 				PRODUCT_NAME = "$(TARGET_NAME)";

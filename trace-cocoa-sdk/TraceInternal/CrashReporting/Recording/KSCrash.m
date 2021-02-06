@@ -174,7 +174,7 @@ static NSString* getBasePath()
 {
     @synchronized (self)
     {
-        KSLOG_TRACE(@"")
+        KSLOG_TRACE(@"setUserInfo method: %@", userInfo.description);
         
         if (userInfo != nil && userInfo.count != 0)
         {
