@@ -1766,14 +1766,15 @@ void kscrashreport_writeStandardReport(const KSCrash_MonitorContext* const monit
 
         if(g_userInfoJSON != NULL)
         {
-            KSLOG_TRACE("g_userInfoJSON has data to write");
-            
+            KSLOG_TRACE("TTTTT g_userInfoJSON has data to write");
+            addStringElement(writer, "TTTTT", "g_userInfoJSON is not null");
             addJSONElement(writer, KSCrashField_User, g_userInfoJSON, false);
             ksfu_flushBufferedWriter(&bufferedWriter);
         }
         else
         {
-            KSLOG_TRACE("g_userInfoJSON is nil");
+            KSLOG_TRACE("TTTTT g_userInfoJSON is nil");
+            addStringElement(writer, "TTTTT", "g_userInfoJSON is null");
             
             writer->beginObject(writer, KSCrashField_User);
         }

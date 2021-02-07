@@ -127,14 +127,19 @@ static void onCrash(struct KSCrash_MonitorContext* monitorContext)
         KSLOG_DEBUG("Updating application state to note crash.");
         kscrashstate_notifyAppCrash();
     }
-    monitorContext->consoleLogPath = g_shouldAddConsoleLogToReport ? g_consoleLogPath : NULL;
+    monitorContext->consoleLogPath = g_consoleLogPath;
 
+    KSLOG_DEBUG("Shams....");
+    
     if(monitorContext->crashedDuringCrashHandling)
     {
+        KSLOG_DEBUG("Updating application state to note crash. 1 shams");
         kscrashreport_writeRecrashReport(monitorContext, g_lastCrashReportFilePath);
     }
     else
     {
+        KSLOG_DEBUG("Updating application state to note crash. 2 shams");
+        
         char crashReportFilePath[KSFU_MAX_PATH_LENGTH];
         int64_t reportID = kscrs_getNextCrashReport(crashReportFilePath);
         strncpy(g_lastCrashReportFilePath, crashReportFilePath, sizeof(g_lastCrashReportFilePath));
@@ -185,7 +190,7 @@ KSCrashMonitorType kscrash_install(const char* appName, const char* const instal
     {
         printPreviousLog(g_consoleLogPath);
     }
-    kslog_setLogFilename(g_consoleLogPath, true);
+    kslog_setLogFilename(g_consoleLogPath, false);
     
     ksccd_init(60);
 
