@@ -30,9 +30,9 @@ public final class CrashController: NSObject {
     
     /// Internal use only
     #if canImport(TraceInternal)
-    internal lazy var installation: TraceInternal.KSCrashInstallation = TraceInternal.KSCrashInstallation()
+    internal let installation: TraceInternal.KSCrashInstallation = TraceInternal.KSCrashInstallation()
     #else
-    internal lazy var installation: KSCrashInstallation = KSCrashInstallation()
+    internal let installation: KSCrashInstallation = KSCrashInstallation()
     #endif
     
     internal var userInfo: [AnyHashable: Any] {
@@ -40,11 +40,12 @@ public final class CrashController: NSObject {
             return installation.userInfo
         }
         set {
+            // TODO: Is this required after using async delay
+            guard installation.isEnabled else { return }
+            
             installation.userInfo = newValue
         }
     }
-    
-    private let asyncDelay = 1.5
     
     // MARK: - Init
     
@@ -52,34 +53,36 @@ public final class CrashController: NSObject {
         self.scheduler = scheduler
         
         super.init()
-        
-        setup(with: resource)
     }
     
     // MARK: - Setup
     
-    private func setup(with resource: Resource) {
-        
-    }
-    
     /// Called after SDK has finished starting up
     internal func postSetup(with resource: Resource) {
-        if !installation.install() {
-            Logger.error(.crash, "Failed to install handler")
-            
-            // Fallback if crash handler isn't ready to be set
-            // When is is called the App hasn't loaded all library in it's memory,
-            // which could explain why it fails i.e Objective-C runtime, c++ library etc..
-            DispatchQueue.global().asyncAfter(deadline: .now() + asyncDelay, execute: { [weak self] in
-                self?.installation.install()
-                self?.updateUserInfo(with: resource)
-            })
-        }
-        
-        updateUserInfo(with: resource)
+        let asyncDelay = 1.0
+        let asyncSecondaryDelay = asyncDelay * 3
         
         DispatchQueue.global().asyncAfter(deadline: .now() + asyncDelay, execute: { [weak self] in
-            self?.scheduleNewReports()
+            guard self?.installation.install() == true else {
+                Logger.error(.crash, "Failed to install crash handler")
+                
+                // Fallback if crash handler isn't ready to be set
+                // When this is called the app hasn't loaded all library in it's memory,
+                // which could explain why it fails i.e Objective-C runtime, c++ library etc..
+                DispatchQueue.global().asyncAfter(deadline: .now() + asyncSecondaryDelay, execute: {
+                    self?.installation.install()
+                    self?.updateUserInfo(with: resource)
+                    self?.scheduleNewReports()
+                })
+                
+                return
+            }
+            
+            self?.updateUserInfo(with: resource)
+            
+            DispatchQueue.global().asyncAfter(deadline: .now() + asyncSecondaryDelay, execute: {
+                self?.scheduleNewReports()
+            })
         })
     }
     

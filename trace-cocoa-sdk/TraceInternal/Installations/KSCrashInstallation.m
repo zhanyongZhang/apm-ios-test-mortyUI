@@ -326,10 +326,11 @@ static void crashCallback(const KSCrashReportWriter* writer)
         }
         
         g_crashHandlerData = self.crashHandlerData;
-        
         handler.onCrash = crashCallback;
         
-        return [handler install];
+        _isEnabled = [handler install];
+        
+        return _isEnabled;
     }
 }
 

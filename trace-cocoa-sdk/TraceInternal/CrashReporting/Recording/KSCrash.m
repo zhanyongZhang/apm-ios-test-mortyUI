@@ -155,7 +155,7 @@ static NSString* getBasePath()
         self.searchQueueNames = NO;
         self.monitoring = KSCrashMonitorTypeProductionSafeMinimal;
         
-        _userInfo = [NSMutableDictionary dictionary];
+        _userInfo = [[NSMutableDictionary alloc] initWithCapacity:2];
     }
     return self;
 }
