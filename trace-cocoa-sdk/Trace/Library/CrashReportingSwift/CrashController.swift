@@ -59,7 +59,7 @@ public final class CrashController: NSObject {
     
     /// Called after SDK has finished starting up
     internal func postSetup(with resource: Resource) {
-        let asyncDelay = 1.0
+        let asyncDelay = 3.0
         let asyncSecondaryDelay = asyncDelay * 3
         
         DispatchQueue.global().asyncAfter(deadline: .now() + asyncDelay, execute: { [weak self] in
